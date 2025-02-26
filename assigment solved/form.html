@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Form</title>
+</head>
+<script>
+      document.addEventListener("DOMContentLoaded" ,function(){
+            const password = document.getElementById("passwords");
+            const checked = document.getElementById("checked");
+           checked.addEventListener("click",function(){
+            if(password.type === "password"){
+                  password.type = "text"
+            }else{
+                  password.type = "password"
+            }
+           })
+      })
+</script>
+<body>
+      <form>
+            <h1>login</h1>
+            <input type="text" placeholder="username or email" required><br>
+            <input type="password" id="passwords" placeholder="**********" required>
+            <input type="checkbox" id="checked"> <br>
+            <button>login</button>
+
+            <h2></h2>
+      </form>
+</body>
+</html>
